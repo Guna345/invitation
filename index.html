@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Arun &amp; Karthika – Baby Shower Invitation</title>
+<meta name="description" content="Baby Shower (வளைகாப்பு) invitation for Arun &amp; Karthika – Sunday, 25 October 2026">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+Tamil:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#120a08; --bg2:#1d0f0c; --gold:#e6c27a; --gold2:#b98a3e; --maroon:#7a1f2b; --ink:#f4e6c8;
+  --ease:cubic-bezier(.22,.8,.24,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-snap-type:y proximity;background:var(--bg)}
+html.locked,html.locked body{overflow:hidden}
+body{font-family:'Cormorant Garamond',serif;color:var(--ink);background:radial-gradient(120% 80% at 50% 0%,#2a1410,var(--bg) 60%);-webkit-font-smoothing:antialiased}
+.ta{font-family:'Noto Sans Tamil',sans-serif}
+.cinzel{font-family:'Cinzel',serif}
+.script{font-family:'Great Vibes',cursive;color:var(--gold)}
+
+/* ---------- Door intro ---------- */
+#doors{position:fixed;inset:0;z-index:100;display:flex;perspective:1400px;pointer-events:none}
+#doors .leaf{flex:1;position:relative;transition:transform 2.2s var(--ease) .3s;background:
+  linear-gradient(90deg,rgba(0,0,0,.45),transparent 20%,transparent 80%,rgba(0,0,0,.45)),
+  repeating-linear-gradient(0deg,#4a2b18 0 2px,#3b2112 2px 4px);
+  box-shadow:inset 0 0 60px rgba(0,0,0,.6)}
+#doors .leaf::before{content:"";position:absolute;inset:8% 10% 6%;border:2px solid rgba(230,194,122,.5);border-radius:120px 120px 6px 6px;
+  background:
+   linear-gradient(rgba(230,194,122,.18),rgba(230,194,122,.18)) 50% 38%/70% 1.5px no-repeat,
+   linear-gradient(rgba(230,194,122,.18),rgba(230,194,122,.18)) 50% 68%/70% 1.5px no-repeat}
+#doors .leaf::after{content:"";position:absolute;top:50%;width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#ffe3a0,var(--gold2));box-shadow:0 0 12px rgba(230,194,122,.7)}
+#doors .l{transform-origin:left center}#doors .l::after{right:14px}
+#doors .r{transform-origin:right center}#doors .r::after{left:14px}
+#doors.open .l{transform:rotateY(-105deg)}#doors.open .r{transform:rotateY(105deg)}
+#doors.gone{display:none}
+.garland{position:absolute;top:0;left:0;right:0;height:70px;z-index:2;
+  background:radial-gradient(circle at 12px 14px,#e8b030 0 6px,transparent 7px) 0 0/26px 30px repeat-x,
+             radial-gradient(circle at 25px 30px,#5e8a2e 0 8px,transparent 9px) 0 12px/26px 40px repeat-x;
+  -webkit-mask:linear-gradient(#000 60%,transparent);mask:linear-gradient(#000 60%,transparent)}
+#tap{position:fixed;left:0;right:0;bottom:12%;z-index:101;text-align:center;font:600 12px 'Cinzel',serif;letter-spacing:.3em;color:var(--gold);animation:pulse 1.6s infinite;transition:opacity .5s}
+#tap.hide{opacity:0;pointer-events:none}
+@keyframes pulse{50%{opacity:.35}}
+
+/* ---------- Fixed chrome ---------- */
+.corner{position:fixed;width:26px;height:26px;z-index:20;pointer-events:none;opacity:.7}
+.corner::before{content:"";position:absolute;inset:0;border:1px solid var(--gold);transform:rotate(45deg) scale(.5)}
+.tl{top:10px;left:10px}.tr{top:10px;right:10px}.bl{bottom:10px;left:10px}.br{bottom:10px;right:10px}
+#counter{position:fixed;top:14px;right:44px;z-index:30;padding:6px 14px;border:1px solid var(--gold2);border-radius:20px;background:rgba(122,31,43,.85);font:600 11px 'Cinzel',serif;letter-spacing:.12em;color:var(--ink);backdrop-filter:blur(6px)}
+#bar{position:fixed;left:0;top:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold2),var(--gold));z-index:40}
+
+/* ---------- Sections ---------- */
+main{max-width:480px;margin:0 auto}
+section{min-height:100svh;scroll-snap-align:start;padding:96px 28px 72px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden}
+section::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 40% at 50% 50%,rgba(230,194,122,.07),transparent);pointer-events:none}
+.rv{opacity:0;transform:translateY(46px);filter:blur(6px);transition:opacity 1s var(--ease),transform 1s var(--ease),filter 1s var(--ease)}
+.rv.in{opacity:1;transform:none;filter:none}
+.rv.d1{transition-delay:.12s}.rv.d2{transition-delay:.26s}.rv.d3{transition-delay:.4s}.rv.d4{transition-delay:.55s}
+.rv.zoom{transform:scale(.88)}
+.rv.left{transform:translateX(-50px)}.rv.right{transform:translateX(50px)}
+
+.eyebrow{font:600 11px 'Cinzel',serif;letter-spacing:.35em;color:var(--gold);margin-bottom:14px;text-transform:uppercase}
+h1,h2,h3{font-weight:400}
+.rule{width:120px;height:1px;margin:18px auto;background:linear-gradient(90deg,transparent,var(--gold),transparent);position:relative}
+.rule::after{content:"";position:absolute;left:50%;top:50%;width:7px;height:7px;background:var(--gold);transform:translate(-50%,-50%) rotate(45deg)}
+
+/* Arch frame */
+.arch{position:relative;width:min(78vw,300px);aspect-ratio:3/4.1;border-radius:999px 999px 14px 14px;padding:8px;border:1.5px solid var(--gold2);background:linear-gradient(#2a1612,#160b09);box-shadow:0 0 50px rgba(230,194,122,.18),inset 0 0 20px rgba(0,0,0,.6)}
+.arch .img{width:100%;height:100%;border-radius:999px 999px 8px 8px;overflow:hidden;position:relative;
+  background:radial-gradient(60% 40% at 50% 28%,rgba(255,226,160,.5),transparent),linear-gradient(180deg,#8a5a2a,#3a1d12 70%,#1a0c08)}
+.arch .img img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.15);transition:transform 2.4s var(--ease)}
+.arch.in .img img,.in .arch .img img{transform:scale(1)}
+.arch .cap{position:absolute;left:0;right:0;bottom:12px;font:600 11px 'Cinzel',serif;letter-spacing:.14em}
+.arch .cap b{display:block;font:400 22px 'Great Vibes',cursive;color:var(--gold);letter-spacing:0}
+
+.names{font:700 38px/1.1 'Cinzel',serif;letter-spacing:.04em}
+.names small{display:block;font:italic 400 16px 'Cormorant Garamond',serif;color:var(--gold);margin:6px 0;letter-spacing:.2em}
+.ta-title{font:700 32px/1.25 'Noto Sans Tamil',sans-serif;color:var(--gold)}
+.ta-body{font:400 14px/1.9 'Noto Sans Tamil',sans-serif;color:#e7d6b0;margin-top:10px}
+.card{width:100%;border:1px solid rgba(230,194,122,.35);border-radius:16px;background:linear-gradient(160deg,rgba(122,31,43,.28),rgba(20,10,8,.7));padding:18px 16px;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.pill{display:inline-block;margin-top:12px;padding:8px 18px;border-radius:30px;background:rgba(122,31,43,.7);border:1px solid var(--gold2);font:600 12px 'Noto Sans Tamil',sans-serif;color:var(--ink)}
+
+/* Timeline */
+.tline{position:relative;width:100%;padding-left:54px;text-align:left;margin-top:24px}
+.tline::before{content:"";position:absolute;left:19px;top:0;bottom:0;width:1.5px;background:linear-gradient(var(--gold),var(--gold2));transform-origin:top;transform:scaleY(0);transition:transform 2s var(--ease)}
+.tline.in::before{transform:scaleY(1)}
+.ev{position:relative;margin-bottom:16px}
+.ev .dot{position:absolute;left:-54px;top:14px;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--gold);background:var(--bg2);display:grid;place-items:center;color:var(--gold);font-size:17px}
+.ev .date{font:400 11px 'Noto Sans Tamil',sans-serif;color:var(--gold)}
+.ev h4{font:600 20px 'Noto Sans Tamil',sans-serif;margin:4px 0}
+.ev .time{font:400 12px 'Noto Sans Tamil',sans-serif;color:#cdb98d}
+.ev.hl .card{border-color:var(--gold);box-shadow:0 0 24px rgba(230,194,122,.25)}
+
+/* Countdown */
+.cd[hidden],#cdDone[hidden]{display:none}
+.cd{display:grid;grid-template-columns:1fr 1fr;gap:14px;width:100%;margin-top:22px}
+.cd div{border:1px solid rgba(230,194,122,.4);background:rgba(20,10,8,.6);padding:18px 8px 12px;position:relative}
+.cd div::before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(230,194,122,.25)}
+.cd b{display:block;font:700 44px 'Cinzel',serif;color:var(--ink);font-variant-numeric:tabular-nums}
+.cd span{font:600 11px 'Cinzel',serif;letter-spacing:.2em;color:var(--gold)}
+
+/* Map */
+.map{width:100%;height:210px;border:1px solid var(--gold2);border-radius:14px;overflow:hidden;margin-top:18px;filter:grayscale(.6) contrast(1.05) brightness(.9)}
+.map iframe{width:100%;height:100%;border:0}
+.btn{display:inline-flex;align-items:center;gap:8px;margin-top:20px;padding:12px 30px;border-radius:30px;background:linear-gradient(135deg,#8c2332,var(--maroon));border:1px solid var(--gold);color:var(--ink);font:600 12px 'Cinzel',serif;letter-spacing:.18em;text-decoration:none;box-shadow:0 8px 24px rgba(122,31,43,.5)}
+
+/* Sparkles */
+.sp{position:fixed;width:3px;height:3px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--gold);opacity:0;z-index:5;animation:tw 4s infinite}
+@keyframes tw{0%,100%{opacity:0;transform:translateY(0)}50%{opacity:.9;transform:translateY(-18px)}}
+#hint{position:absolute;bottom:26px;left:0;right:0;font:600 10px 'Cinzel',serif;letter-spacing:.3em;color:var(--gold);animation:pulse 1.8s infinite}
+@media (prefers-reduced-motion:reduce){.rv{transition:none;opacity:1;transform:none;filter:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div>
+<div id="counter">01 / 08</div>
+
+<div id="doors"><div class="garland"></div><div class="leaf l"></div><div class="leaf r"></div></div>
+<div id="tap">TAP TO OPEN</div>
+
+<main id="main">
+
+<!-- 01 Cover -->
+<section data-i="1">
+  <div class="rv zoom script" style="font-size:40px">Baby Shower Invitation</div>
+  <div class="rv zoom d1 ta-title" style="font-size:24px;margin-top:4px">வளைகாப்பு விழா</div>
+  <div class="rv zoom d2 arch" style="margin-top:18px">
+    <div class="img"><img alt="Arun &amp; Karthika baby shower" src="photo.jpg" onerror="this.style.display='none'"></div>
+    <div class="cap">Arun &amp; Karthika<br><span style="font-weight:400;letter-spacing:.2em">25 · 10 · 2026</span></div>
+  </div>
+  <div class="rv d3 names" style="margin-top:30px">ARUN <small>&amp;</small> KARTHIKA</div>
+  <div class="rv d4 cinzel" style="margin-top:10px;font-size:13px;letter-spacing:.3em;color:var(--gold)">25.10.2026</div>
+  <div id="hint">SCROLL ↓</div>
+</section>
+
+<!-- 02 Welcome -->
+<section data-i="2">
+  <div class="rv ta-title" style="font-size:32px">வளைகாப்பு அழைப்பிதழ்</div>
+  <div class="rv d1 rule"></div>
+  <div class="rv d2 card">
+    <p class="ta-body" style="margin:0">எங்கள் வாழ்வில் மலரப்போகும் புதிய உறவின் மகிழ்ச்சியை உங்களுடன் பகிர்ந்துகொள்ள அன்புடன் அழைக்கிறோம்.</p>
+  </div>
+  <div class="rv d3 names" style="margin-top:28px;font-size:30px">ARUN <small>&amp;</small> KARTHIKA</div>
+  <p class="rv d4 ta-body">Join us in blessing the parents-to-be<br>and their little one.</p>
+</section>
+
+<!-- 03 Blessings -->
+<section data-i="3">
+  <div class="rv eyebrow">✦ A Day of Blessings ✦</div>
+  <div class="rv d1 ta-title">ஆசியும் அன்பும்</div>
+  <div class="rv d2 rule"></div>
+  <div class="rv zoom d3 card hl" style="margin-top:12px;border-color:var(--gold);box-shadow:0 0 24px rgba(230,194,122,.25)">
+    <div class="ta-title" style="font-size:24px">வளைகாப்பு விழா</div>
+    <div class="cinzel" style="font-size:15px;letter-spacing:.25em;margin:8px 0">— BABY SHOWER —</div>
+    <div class="cinzel" style="font-size:12px;letter-spacing:.2em;color:var(--gold)">25.10.2026 · SUNDAY</div>
+  </div>
+</section>
+
+<!-- 04 With love -->
+<section data-i="4">
+  <div class="rv eyebrow">With Love</div>
+  <div class="rv d1 ta-title" style="font-size:28px">அன்பின் தருணங்கள்</div>
+  <div class="tline rv" id="tl">
+    <div class="ev"><i class="dot">❀</i><div class="card"><h4>அன்பு</h4><div class="time">Love for the little one on the way</div></div></div>
+    <div class="ev hl"><i class="dot">✿</i><div class="card"><h4>ஆசி</h4><div class="time">Blessings from family &amp; friends</div></div></div>
+    <div class="ev"><i class="dot">✦</i><div class="card"><h4>மகிழ்ச்சி</h4><div class="time">Joy to share together</div></div></div>
+  </div>
+</section>
+
+<!-- 05 Event invitation -->
+<section data-i="5">
+  <div class="rv eyebrow">You are invited to</div>
+  <div class="rv zoom d1 arch" style="aspect-ratio:3/3.9;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:30px 16px">
+    <div class="script" style="font-size:30px">வளைகாப்பு விழா</div>
+    <div class="cinzel" style="font-size:25px;letter-spacing:.2em;margin:8px 0">BABY SHOWER</div>
+    <div class="rule" style="width:90px;margin:10px auto"></div>
+    <div class="cinzel" style="font-size:20px;letter-spacing:.1em">ARUN &amp; KARTHIKA</div>
+    <div class="cinzel" style="font-size:12px;letter-spacing:.14em;color:var(--gold);margin-top:14px">25 OCTOBER 2026 · SUNDAY</div>
+  </div>
+</section>
+
+<!-- 06 Countdown -->
+<section data-i="6">
+  <div class="rv eyebrow">Counting down to</div>
+  <div class="rv d1 script" style="font-size:40px">Our Little Miracle</div>
+  <div class="rv d1 ta-title" style="font-size:18px">குட்டி தேவதையை வரவேற்க</div>
+  <div class="cd rv d2" id="cd">
+    <div><b data-u="d">00</b><span>DAYS</span></div>
+    <div><b data-u="h">00</b><span>HOURS</span></div>
+    <div><b data-u="m">00</b><span>MINUTES</span></div>
+    <div><b data-u="s">00</b><span>SECONDS</span></div>
+  </div>
+  <div class="rv zoom card" id="cdDone" hidden style="margin-top:22px"><div class="ta-title" style="font-size:22px">இன்று நம் மகிழ்ச்சியான நாள்!</div><p class="ta-body">Today is the day — thank you for celebrating with us. 🎉</p></div>
+  <p class="rv d3 ta-body" style="margin-top:22px">உங்கள் நல்வரவை விரும்பும்<br>அருண் &amp; கார்த்திகா</p>
+</section>
+
+<!-- 07 Venue -->
+<section data-i="7">
+  <div class="rv eyebrow">Celebration Venue</div>
+  <div class="rv d1 ta-title" style="font-size:26px">விழா நடைபெறும் இடம்</div>
+  <p class="rv d2 ta-body">No. 5/3, Bangaru Street, Saligramam, Chennai – 600093</p>
+  <div class="rv d2 cinzel" style="font-size:12px;letter-spacing:.14em;color:var(--gold);margin-top:6px">Sunday, 25 October 2026</div>
+  <a class="rv d3 btn" id="dir" href="#" target="_blank" rel="noopener">➤ GET DIRECTIONS</a>
+  <div class="rv zoom d4 map"><iframe id="mapf" loading="lazy" title="Map of the celebration venue"></iframe></div>
+</section>
+
+<!-- 08 Thank you -->
+<section data-i="8">
+  <div class="rv zoom arch" style="margin-bottom:26px">
+    <div class="img"><img alt="" src="photo.jpg" onerror="this.style.display='none'"></div>
+    <div class="cap">Arun &amp; Karthika<br><span style="font-weight:400;letter-spacing:.2em">25 · 10 · 2026</span></div>
+  </div>
+  <div class="rv d1 script" style="font-size:40px">Thank You</div>
+  <div class="rv d1 ta-title" style="font-size:22px">நன்றி</div>
+  <div class="rv d2 rule"></div>
+  <p class="rv d3 ta-body">எங்கள் மகிழ்ச்சியான தருணத்தில் பங்கேற்று, அம்மாவாகப் போகும் கார்த்திகாவையும் எங்கள் குழந்தையையும் ஆசீர்வதிக்க அன்புடன் வருக!</p>
+  <p class="rv d4 cinzel" style="margin-top:14px;font-size:13px;letter-spacing:.14em;color:var(--gold)">With love, Arun &amp; Karthika</p>
+</section>
+
+</main>
+
+<script>
+// Sparkles
+for(let i=0;i<14;i++){const s=document.createElement('i');s.className='sp';s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*100+'vh';s.style.animationDelay=(Math.random()*4)+'s';s.style.animationDuration=(3+Math.random()*3)+'s';document.body.appendChild(s)}
+
+// Door intro
+const root=document.documentElement,doors=document.getElementById('doors'),tap=document.getElementById('tap');
+root.classList.add('locked');
+let opened=false;
+function openDoors(){
+  if(opened)return;opened=true;tap.classList.add('hide');doors.classList.add('open');
+  setTimeout(()=>{root.classList.remove('locked');},1400);
+  setTimeout(()=>doors.classList.add('gone'),2900);
+  setTimeout(()=>document.querySelectorAll('section[data-i="1"] .rv').forEach(e=>e.classList.add('in')),900);
+}
+['click','touchstart','keydown'].forEach(e=>addEventListener(e,openDoors,{once:true,passive:true}));
+setTimeout(openDoors,2500);
+
+// Reveal + counter
+const counter=document.getElementById('counter'),bar=document.getElementById('bar');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in')}}),{threshold:.2});
+document.querySelectorAll('.rv').forEach(el=>{ if(!el.closest('section[data-i="1"]'))io.observe(el)});
+const secs=[...document.querySelectorAll('section')];
+const io2=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)counter.textContent=String(e.target.dataset.i).padStart(2,'0')+' / 08'}),{threshold:.55});
+secs.forEach(s=>io2.observe(s));
+addEventListener('scroll',()=>{const h=root.scrollHeight-innerHeight;bar.style.width=(scrollY/h*100)+'%';
+  // parallax on arch images
+  document.querySelectorAll('.arch .img img').forEach(im=>{const r=im.getBoundingClientRect();const p=(r.top+r.height/2-innerHeight/2)/innerHeight;im.style.objectPosition='50% '+(50+p*18)+'%'});
+},{passive:true});
+
+// Countdown (date-only target: 25 Oct 2026, 00:00 in the visitor's local time)
+const target=new Date(2026,9,25,0,0,0);
+function tick(){const ms=target-Date.now();
+  if(ms<=0){document.getElementById('cd').hidden=true;document.getElementById('cdDone').hidden=false;clearInterval(iv);return}
+  const d=ms/1000,v={d:Math.floor(d/86400),h:Math.floor(d%86400/3600),m:Math.floor(d%3600/60),s:Math.floor(d%60)};
+  document.querySelectorAll('#cd b').forEach(b=>b.textContent=String(v[b.dataset.u]).padStart(2,'0'))}
+const iv=setInterval(tick,1000);tick();
+
+// Venue map + directions
+const addr='No. 5/3, Bangaru Street, Saligramam, Chennai - 600093';
+document.getElementById('dir').href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(addr);
+document.getElementById('mapf').src='https://www.google.com/maps?q='+encodeURIComponent(addr)+'&output=embed';
+</script>
+</body>
+</html>
